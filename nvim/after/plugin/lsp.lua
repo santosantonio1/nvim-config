@@ -3,12 +3,12 @@ local lsp = require("lsp-zero")
 require('mason').setup({})
 require('mason-lspconfig').setup({
 	ensure_installed = {
-		'clangd',
+		--'clangd',
 	},
 	handlers = {
-		function(clangd)
-			require('lspconfig')[clangd].setup({})
-		end,
+		--function(clangd)
+		--	require('lspconfig')[clangd].setup({})
+		--end,
 	},
 })
 
